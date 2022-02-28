@@ -1,0 +1,58 @@
+Created by testinium on 28.02.2022
+
+This is a concept file with following syntax for each concept.
+# Uygulama açılşı yapılır
+* "5" saniye kadar bekle
+* Uygulama acılıs kontorlü
+* "3" saniye kadar bekle
+* Uygulamaya giriş kontorlü
+* "3" saniye kadar bekle
+
+
+# Kategori sekmesine girilir ve giriş kontrolü yapılır.
+* id "com.ozdilek.ozdilekteyim:id/nav_categories" 'li elemene tıkla
+* "2" saniye kadar bekle
+* Kategori Giris Kontrolu
+
+# Kategori sekmesinden kadın sekmesine giriş yapılır.
+* xpatli "//android.widget.TextView[@text = 'Kadın']" 'li elemene tıkla
+* "3" saniye kadar bekle
+
+# Pantolon sekmesine girilir ve 2 kez aşağı scrol yapılır.
+* xpatli "//android.widget.TextView[@text = 'Pantolon']" 'li elemene tıkla
+* "3" saniye kadar bekle
+* Ekranı "2" defa sayfa sonuna kaydır ve "2" saniye bekle
+
+# Pantolon sekmesine tıklanır ve rastgele bir pantolon seçilerek seçilen pantolonun doğru olduğu kontrolü yapılır.
+* Rasgele ürün seçimi yap
+* "3" saniye kadar bekle
+* Random Ürün Kontrolü
+
+# Seçilen pantolon favorilere eklenir.
+* id "com.ozdilek.ozdilekteyim:id/imgFav" 'li elemene tıkla
+* "3" saniye kadar bekle
+
+# Favorilere alındıktan sonra Login ekranın gelmesi kontrol edilir.
+* Login Sayfası Kontrolü
+
+# Login sayfasında kullanıcı adı ve parola yazma kontrol edilir.
+* id "com.ozdilek.ozdilekteyim:id/etEposta" 'li elemene tıkla
+* "com.ozdilek.ozdilekteyim:id/etEposta"'li Elemene Tıkla ve "suhahorpan" değerini yaz
+* "2" saniye kadar bekle
+* id "com.ozdilek.ozdilekteyim:id/etPassword" 'li elemene tıkla
+* "com.ozdilek.ozdilekteyim:id/etPassword"'li Elemene Tıkla ve "qwerty" değerini yaz
+* "2" saniye kadar bekle
+
+# 2 kere geri butonuna tıklanarak yeniden pantolon seçme alınına dönülür.
+* id "com.ozdilek.ozdilekteyim:id/ivBack" 'li elemene tıkla
+* "2" saniye kadar bekle
+* id "com.ozdilek.ozdilekteyim:id/ivBack" 'li elemene tıkla
+* "2" saniye kadar bekle
+
+# Dönülen pantolon sekmesinde yeniden rastgele bir ürün seçilerek sepete eklenir.
+* Rasgele ürün seçimi yap
+* "2" saniye kadar bekle
+* Rasgele beden seçimi yap
+* "2" saniye kadar bekle
+* id "com.ozdilek.ozdilekteyim:id/relLayAddCartBtn" 'li elemene tıkla
+* "2" saniye kadar bekle
